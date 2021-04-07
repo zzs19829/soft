@@ -1,0 +1,21 @@
+{% extends "common/layout.html"  %}
+{% block content %}
+hello I Love Imooc
+<p>name = {{ name }}</p>
+<p>
+    {% if MARRY %}
+    用户：{{ MARRY.name }} 密码:{{  MARRY.password }}
+    {% endif %}
+</p>
+<p>
+    {% for item in name_list %}
+    {{ item }}
+    {% endfor %}
+</p>
+<p> flask 查询数据库</p>
+<p>
+    {% for item in admin %}
+    Id:{{ item['Id'] }} Username:{{ item['Username'] }} Password:{{ item['Password'] }}
+    {% endfor %}
+</p>
+{% endblock %}
