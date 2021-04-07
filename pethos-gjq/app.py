@@ -11,5 +11,5 @@ if __name__ == '__main__':
     # 下列语句根据model在数据库里创建表
     db.create_all()
 
-    
+
     app.run(host = "127.0.0.1",port=8000,debug=True)
